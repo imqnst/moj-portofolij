@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul id="menu">
+            <li><a href="#home">Početna</a></li>
+            <li><a href="#about">O meni</a></li>
+            <li><a href="#hobbies">Moji hobiji</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="welcome-message">
+            <h2>Dobrodošli na moju web stranicu!</h2>
+        </div>
+        <div class="profile">
+            <div class="profile-image-wrapper">
+                <img src="iman.jpg" alt="Your Name" class="profile-image">
+            </div>
+            <h1>Iman</h1>
+            <p>Huseinspahić</p>
+        </div>
+    </section>
+    
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>O meni</h2>
+        <p>Ja sam Iman Huseinspahić, rođena 2007.god. u Zenici, Bosna i Hercegovina, 
+            gdje i sada živim. Završila sam devetogodišnje obrazovanje u OŠ "Meša 
+            Selimović" sa odličnim uspjehom i bila među najboljim učenicima generacije. Po 
+            završetku ovog obrazovanja upisala sam se u JU "Prva gimnazija" gdje sam 
+            završila dva razreda odličnim uspjehom, a na jesen krećem u treći. Još u ranom 
+            djetinjstvu počela sam se baviti sportom, prvenstveno skijanjem, i već tada 
+            ostvarila vidne rezultate osvajanjem prva tri mjesta za šta sam dobila i 
+            odgovarajuća priznanja. Nastavila sam biti aktivna u sportskim disciplinama kao 
+            što su tenis, šah, atletika, košarka i odbojka, a jedno vrijeme sam bila aktivni član 
+            Aero kluba "Zenica". Učestvovala sam na velikom broju takmičenja u okviru 
+            navedenih aktivnosti i ostvarila izvanredne rezultate, a posebno u šahu. Od svih 
+            srednjih škola na gradskom takmičenju ove godine, "Prva gimnazija", gdje sam 
+            ja jedina predstavljala žensku ploču, osvojila je prvo mjesto. Također sam 
+            učestvovala na školskim takmičenjima iz oblasti matematike i informatike na 
+            kojima sam osvajala izuzetne rezultate i bila jedina ženska osoba među svim 
+            ostalima takmičarima. Bila sam učesnik online takmičenja iz informatike za žene.
+            Od početka prošle godine član sam STEM akademije u Zenici i u relativno 
+            kratkom vremenu postigla sam zavidne rezultate u oblasti robotike, a to potvrđuje 
+            i činjenica da nakon državnog takmičenja u Junu ove godine, sa svojim timom
+            sam išla na evropsko takmičenje koje se održalo u Italiji u Septembru ove 
+            godine! Nakon toga sam također postala asistentica na STEM akademiji.
+            Također, uspješno sam završila predavanje o osnovama projekata i mikrobiznisa, 
+            te primila osnovno znanje na projektu “S Arduinom na TI”, a više radila sa 
+            arduinom na STEM akademiji.
+            Pored svega navedenog ja bih da dodam i obrazovanje-kurseve iz njemačkog i 
+            engleskog jezika, a također i online kurs iz turskog jezika. Dakle, posjedujem 
+            solidno znanje iz njemačkog i turskog jezika, a odlično iz engleskog jezika – po 
+            pitanju korespodencije, čitanja i pisanja.</p>
+    </section>
+
+    <section id="hobbies" class="section">
+        <h2>Moji hobiji</h2>
+        <div class="hobby-images">
+            <img src="tenis.jpg" alt="Hobby 1"><h3>Tenis</h3>
+            <img src="skijanje.jpg" alt="Hobby 2"><h3>Skijanje</h3>
+            <img src="sah.jpg" alt="Hobby 3"><h3>Šah</h3>
+            <img src="stem.jpg" alt="Hobby 3"><h3>STEM</h3>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Kontakt</h2>
+        <p>Email: <a href="https://mail.google.com">huseinspahiciman@email.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/imqn.st" target="_blank">@imqn.st</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/iman-huseinspahic-7a382a31b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Iman Huseinspahić</a></p>
+        
+        <h3>Kontaktirajte me</h3>
+        <form id="contact-form">
+            <input type="text" placeholder="Vaše ime" required>
+            <input type="email" placeholder="Vaš email" required>
+            <textarea placeholder="Vaša poruka" required></textarea>
+            <button type="submit">Pošaljite</button>
+        </form>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>
